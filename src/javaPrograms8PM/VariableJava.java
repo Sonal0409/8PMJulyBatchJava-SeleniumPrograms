@@ -25,6 +25,10 @@ public class VariableJava {
 		// Data types: int : this data type is used when a variable is storing integer values
 		//
 		
+		// Syntax: 
+		
+		//datatype variablename = data;
+		
 		//variable declaration
 		int a1;
 		// assigning value to variables
@@ -32,14 +36,21 @@ public class VariableJava {
 		
 		String p1="200";
 		
-		int a_=10;
+		int a=10;
+		
+		System.out.println("a");
+		
+		System.out.println("hello");
+		System.out.println("100");
+		
+		
 		
 		int b$=2345;
 		
 		char c3='%';
 		String c4="How are you?%67&";
 		
-		System.out.println(b$);  // this statement will print the value of b in console
+		System.out.println(b$ +" "+ c3 +" " + c4);  // this statement will print the value of b in console
 		
 		int s4=1245677;
 		// String = if a variable is storing a series of character than we will use data types as String
@@ -64,7 +75,8 @@ public class VariableJava {
 	
 	// changing the value of a variable			
 		
-
+//Assignment:  declare 2 integer values, 
+		//declare 2 string values, and print each variable value
 				
 				
 				
