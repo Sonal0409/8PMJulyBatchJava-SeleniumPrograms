@@ -80,11 +80,13 @@ public class VariableJava {
 				
 				
 				
+		// to call a method we need an Object		
 				
+		UserDefinedMethodsDemo obj = new UserDefinedMethodsDemo();		
 				
-				
-				
-				
+		System.out.println(obj.add());
+		obj.login();
+		obj.sum();		
 				
 				
 	}

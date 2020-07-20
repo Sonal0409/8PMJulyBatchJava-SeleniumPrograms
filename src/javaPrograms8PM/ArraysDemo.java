@@ -98,6 +98,25 @@ public class ArraysDemo {
 		// Assignment - To print a multi dimensional array
 		
 		
+		// length() is an exisitng method in Java
+		// it is used to find the length of an array
+		
+		int x=arr4.length;
+		
+		
+		
+		
+		for(int i=0; i<arr5.length;i++)   // to go to index of parent arry
+		{
+			System.out.println("printing multi dimensional array");
+			
+			for(int j=0; j<arr5[i].length;j++)
+			{
+			
+				System.out.println(arr5[i][j]);	
+			}
+		}
+		
 		
 		
 		
