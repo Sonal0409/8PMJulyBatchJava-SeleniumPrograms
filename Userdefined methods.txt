@@ -1,0 +1,108 @@
+In selenium we will be creating test cases
+
+A java class will have multple test cases , create , modify and delete
+
+Create methods for each test case
+
+static setup()
+{
+Chromebrowser()
+maxbrowser()
+deletecookies()
+timout()
+weburl()
+wait time()
+}
+
+ClassA()
+{
+
+static void Create()
+{
+Create an account
+selenium to execute steps to create an account on the website
+}
+
+void modify()
+{
+
+steps to Search for an account
+selenium to execute steps to modification of an account details on the website
+}
+
+void delete()
+{
+steps to Search for an account
+selenium to execute steps to modification of an account details on the website
+}
+
+
+main()
+
+{
+
+// create an object 
+
+
+classname obj = new classname();
+
+obj.create();
+obj.create();
+obj.create();
+obj.create();
+obj.create();
+obj.create();
+
+
+obj.delete();
+
+obj.modify();
+
+}
+
+
+ClassB()
+{
+
+
+// again write the test case methods for set up of browser and creation of account
+
+// or call test cases already written 
+
+classA.setup();
+ClassA.create();
+
+product()
+{'
+
+buy products
+}
+
+
+billing()
+{
+to pay the ammount
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

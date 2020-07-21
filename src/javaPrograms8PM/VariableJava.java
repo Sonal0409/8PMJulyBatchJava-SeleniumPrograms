@@ -86,7 +86,13 @@ public class VariableJava {
 				
 		System.out.println(obj.add());
 		obj.login();
-		obj.sum();		
+		obj.sum();
+		
+		// call the static method as classname.methodname
+		
+		UserDefinedMethodsDemo.mul();
+		
+		
 				
 				
 	}
