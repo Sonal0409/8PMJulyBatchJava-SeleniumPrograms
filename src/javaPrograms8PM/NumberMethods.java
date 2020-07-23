@@ -12,7 +12,10 @@ public class NumberMethods {
 		
 	int a=10;
 		
+	
+	
 	Integer i=100;
+	
 	
 	
 	
