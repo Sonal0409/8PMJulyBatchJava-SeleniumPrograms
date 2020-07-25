@@ -2,6 +2,11 @@ package oOPSConcepts;
 
 public class AutoLoans extends HomeLoans {
 
+	public void browser()
+	{
+		System.out.println(" Test case to opne MS edge browser");
+	}
+	
 	public void applyAutoLoan()
 	{
 		System.out.println("Test Case to apply for Autoloan on the application");
@@ -14,9 +19,12 @@ public class AutoLoans extends HomeLoans {
 		AutoLoans obj = new AutoLoans();
 		
 		//Test Case: 
-		// IEbrowser
+		// MSEdge browser
 		
-		IEbrowser();
+		// Over riding : if methods with same name are present in child class and parent class
+		//Then only method of current class will be called
+		obj.browser();  // which class method will be called when  both class have same method names
+		
 		//1. Loginto Banking application
 		obj.login();
 		//2. Create an New Customer account

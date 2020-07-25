@@ -40,7 +40,7 @@ public class Demo extends AutoLoans {
 
 		Demo obj = new Demo();
 		
-		obj.
+		
 		
 		//System.out.println(obj.sum(100, 200));
 		

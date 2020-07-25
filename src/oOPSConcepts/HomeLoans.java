@@ -4,6 +4,13 @@ package oOPSConcepts;
 
 public class HomeLoans  extends BaseClass {
 	
+	// OverRiding
+	
+	public void browser()
+	{
+		System.out.println("open a chrome browser");
+	}
+	
 	// prerequiste is 
 	// that the cusotmer should loginto the application
 	// create its account
