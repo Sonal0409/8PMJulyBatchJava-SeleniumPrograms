@@ -1,5 +1,7 @@
 package seleniumScripts;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -22,10 +24,22 @@ public class SetupCheck {
 		
 		WebDriver driver= new ChromeDriver();
 		
+		// Maximize the browser
+		
+		driver.manage().window().maximize();
+		
+		// delete cookies on the browser
+		
+		driver.manage().deleteAllCookies();
+		
+		
+		
 		// open the application on the browser -- get() method
 		
 		
 		driver.get("https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Selenium+%28software%29");
+		
+		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
 		
 		Thread.sleep(3000);
 		
@@ -35,6 +49,7 @@ public class SetupCheck {
 		
 		driver.close();
 		
+	
 		
 		
 		
