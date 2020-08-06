@@ -17,11 +17,12 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\vishal mittal\\Downloa
 		
 		driver.manage().deleteAllCookies();  // delete cookies on the browser
 		
+		
 		driver.get("https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Selenium+%28software%29");
 		
 		// locate the text box and enter data in the text box
 		
-	driver.findElement(By.id("wpName256")).sendKeys("Username1");	
+	driver.findElement(By.id("wpName")).sendKeys("Username1");	
 	
 	Thread.sleep(3000);
 	
