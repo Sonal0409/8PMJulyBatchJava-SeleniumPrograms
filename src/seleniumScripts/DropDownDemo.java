@@ -1,5 +1,7 @@
 package seleniumScripts;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,11 +25,13 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\vishal mittal\\Downloa
 		
 		// Select is a selenium class used when we want to test static drop down menus
 		
-		WebElement wb= driver.findElement(By.xpath("//*[@id=\"Content\"]/div[1]/center[1]/div/form/select"));
+		WebElement e= driver.findElement(By.xpath("//*[@id=\"Content\"]/div[1]/center[1]/div/form/select"));
 		
-		Select dd = new Select(wb);
 		
-		 
+		Select dd = new Select(e);
+		
+		//Select dd = new Select(driver.findElement(By.xpath("//*[@id=\"Content\"]/div[1]/center[1]/div/form/select")););
+		
 		dd.selectByIndex(0);  // this method will select the option at index 0 in the drop down
 		
 		Thread.sleep(3000);
@@ -39,9 +43,44 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\vishal mittal\\Downloa
 		dd.selectByVisibleText("With cream & sugar"); // this method will select the option based on text in the drop down
 		
 		
+		// counting number of options in the drop down
 		
+		// List<String> s1;
+		// List<Integer> in;
+		// List Object
+	List<WebElement>  li=dd.getOptions();  // this method will fetch all the options (5) from the drop down
 		
+	int num =li.size();   // will count the total number of values in the list
+	
+	System.out.println("Total values in DD : "+ num);
+	
+	
+	//printing all the values from the drop down on your console
+	
+	// write a for loop
+	
+	for(int i=0; i<num;i++)
+	{
+		System.out.println(li.get(i).getText());
 		
+	}
+	
+	// OR
+	
+	for(WebElement i : li)
+	{
+		String x= i.getText();
+		if(x.equals("with sugar"));
+		System.out.println(x);
+		break;
+	}
+	
+	
+	
+	
+	
+	
+	
 		
 		
 		
